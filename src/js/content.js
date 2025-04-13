@@ -2,6 +2,12 @@ import * as THREE from 'three';
 import { gsap } from 'gsap';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
+// Import data file URLs for Vite compatibility
+import githubDataUrl from '../../data/github_data.md?url';
+import linkedinDataUrl from '../../data/linkedin_data.json?url';
+import polarstepsDataUrl from '../../data/polarsteps_data.md?url';
+import polarstepsImageUrl from '../assets/polarsteps.jpg'; // Path relative to src/js/
+
 // Content loader functions
 function loadAboutContent() {
   const aboutSection = document.querySelector('#about .about-text');
@@ -25,7 +31,7 @@ async function loadProjectsContent() {
   projectsGrid.innerHTML = '<p>Loading GitHub projects...</p>'; // Placeholder
 
   try {
-    const response = await fetch('./data/github_data.md');
+    const response = await fetch(githubDataUrl); // Use imported URL
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -179,7 +185,7 @@ async function loadTravelContent() {
   `;
 
   try {
-    const response = await fetch('./data/polarsteps_data.md');
+    const response = await fetch(polarstepsDataUrl); // Use imported URL
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -204,7 +210,7 @@ async function loadTravelContent() {
 
       tripCard.innerHTML = `
         <a href="https://polarsteps.com/ArneReabel" target="_blank" rel="noopener noreferrer" class="trip-image-link">
-          <img src="./src/assets/polarsteps.jpg" alt="${tripData.name || 'Trip'}" class="trip-image">
+          <img src="${polarstepsImageUrl}" alt="${tripData.name || 'Trip'}" class="trip-image"> // Use imported URL
         </a>
         <div class="trip-content">
           <h3 class="trip-title">${tripData.name || 'Unnamed Trip'}</h3>
@@ -280,7 +286,7 @@ async function loadCertificationsContent() {
   certificationsList.innerHTML = '<p>Loading certifications...</p>'; // Placeholder
 
   try {
-    const response = await fetch('./data/linkedin_data.json');
+    const response = await fetch(linkedinDataUrl); // Use imported URL
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -298,36 +304,36 @@ async function loadCertificationsContent() {
     const ul = document.createElement('ul');
     ul.className = 'certification-items'; // Add class for styling
 
+    // --- Original loop logic restored ---
     certifications.forEach(cert => {
       const li = document.createElement('li');
       li.className = 'certification-item'; // Add class for styling
-      
+
       const certName = cert.name || 'Unnamed Certification';
       const certAuthority = cert.authority || 'Unknown Authority';
-      const edxCertUrl = "https://courses.edx.org/certificates/a3f145f6d4b6426d90d24f717ebb11e8"; 
-      // Removed duplicate edxCertUrl declaration
+      const edxCertUrl = "https://courses.edx.org/certificates/a3f145f6d4b6426d90d24f717ebb11e8";
       const constructCertUrl = "https://app.theconstruct.ai/accomplishments/verify/RIAA2BACFEECAD5/";
       const yaskawaCertUrl = "https://yaskawaacademy.myabsorb.com/#/online-courses/4519c40e-a3ad-4a44-a53a-cff977a772df";
       const ciscoCertUrl = "https://www.credly.com/badges/f9df42b8-960f-4c2b-a905-d2c003f10e5b?source=linked_in_profile";
-      const codecademyLACertUrl = "https://www.codecademy.com/profiles/arne_reabel/certificates/34c14a8d82ce7e5eb8077bd356946169"; 
+      const codecademyLACertUrl = "https://www.codecademy.com/profiles/arne_reabel/certificates/34c14a8d82ce7e5eb8077bd356946169";
       const codecademyPy3CertUrl = "https://www.codecademy.com/profiles/arne_reabel/certificates/6c152bd262967f8c941c9707ed636bda"; // Codecademy Python 3 URL
-      
+
       // Check if this is one of the certificates to link
       if (certName === "edX Verified Certificate for Python Basics for Data Science" && certAuthority === "edX") {
         const shortCertName = "Python basics for Data Science"; // Use the shorter name for display
         li.innerHTML = `
           <a href="${edxCertUrl}" target="_blank" rel="noopener noreferrer" class="certification-link">
-            <span class="certification-name">${shortCertName}</span> - 
+            <span class="certification-name">${shortCertName}</span> -
             <span class="certification-authority">${certAuthority}</span>
           </a>
-        `; 
+        `;
       } else if (certName === "Code Foundation for ROS" && certAuthority === "The Construct") {
          li.innerHTML = `
           <a href="${constructCertUrl}" target="_blank" rel="noopener noreferrer" class="certification-link">
-            <span class="certification-name">${certName}</span> - 
+            <span class="certification-name">${certName}</span> -
             <span class="certification-authority">${certAuthority}</span>
           </a>
-        `; 
+        `;
       } else if (certName === "Gp series w /YRC1000micro Controller w / Smart Pendant" && certAuthority === "YASKAWA Europe") {
          li.innerHTML = `
           <a href="${yaskawaCertUrl}" target="_blank" rel="noopener noreferrer" class="certification-link">
@@ -358,29 +364,30 @@ async function loadCertificationsContent() {
         `;
       } else {
          // Display other certificates without a link
-         if (certName === " Yaskawa Motosim Robot Programming and Simulation") { 
+         if (certName === " Yaskawa Motosim Robot Programming and Simulation") {
             // Shorten the authority text specifically for this certificate
-            const shortenedAuthority = certAuthority.replace(" & training", ""); 
+            const shortenedAuthority = certAuthority.replace(" & training", "");
             li.innerHTML = `
               <span class="certification-name">${certName}</span> - <span class="certification-authority">${shortenedAuthority}</span>
-            `; 
+            `;
          } else if (certName === "International Diploma in Robot Welding") {
              const modifiedCertName = certName.replace("Welding", "Welding NL IRW-C 015");
              li.innerHTML = `
-              <span class="certification-name">${modifiedCertName}</span> - 
+              <span class="certification-name">${modifiedCertName}</span> -
               <span class="certification-authority">${certAuthority}</span>
-            `; 
+            `;
          } else {
             li.innerHTML = `
-              <span class="certification-name">${certName}</span> - 
+              <span class="certification-name">${certName}</span> -
               <span class="certification-authority">${certAuthority}</span>
-            `; 
+            `;
          }
       }
-      // Move appendChild outside the innerHTML assignment
       ul.appendChild(li);
-    }); // End forEach loop
-    
+    }); // End original forEach loop
+    // --- End original loop ---
+
+    // --- Manual additions uncommented ---
     // Manually add the UT Austin certificate
     const utAustinCertName = "UTAustinX UT.5.05x Linear Algebra - Foundations to Frontiers";
     const utAustinCertUrl = "https://learning.edx.org/course/course-v1:UTAustinX+UT.5.05x+1T2022/home";
@@ -488,14 +495,19 @@ async function loadCertificationsContent() {
       </a>
     `;
     ul.appendChild(ros2Li); // Add it to the list
-    
+    // --- End manual additions ---
+
     certificationsList.appendChild(ul);
 
   } catch (error) {
-    console.error('Error loading or parsing certifications data:', error);
-    certificationsList.innerHTML = '<p>Error loading certifications. Please check the console.</p>';
+    // Add detailed logging here as well
+    console.error('Detailed error in loadCertificationsContent:', error);
+    certificationsList.innerHTML = '<p>Error loading certifications. Please check the console for details.</p>';
   }
 }
+
+
+// REMOVE DUPLICATE FUNCTION DEFINITION BELOW
 
 
 function loadContactContent() {
