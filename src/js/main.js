@@ -5,7 +5,7 @@ import { loadAboutContent, loadProjectsContent, loadExperienceContent, loadTrave
 import { createInteractiveProjectCards, createInteractiveTimeline, createInteractiveSocialLinks, createScrollAnimations, createTypingEffect } from './interactive.js';
 
 // Import texture URLs for Vite compatibility
-import earthTextureUrl from '../assets/earth.jpeg';
+// import earthTextureUrl from '../assets/earth.jpeg'; // No longer needed
 import nightTextureUrl from '../assets/earth_night.jpeg';
 
 // Main JavaScript file for the Three.js website
@@ -99,55 +99,14 @@ function createGlobe() {
   
   // Earth texture
   const textureLoader = new THREE.TextureLoader(loadingManager);
-  const globeTexture = textureLoader.load(earthTextureUrl); // Use imported URL
+  // const globeTexture = textureLoader.load(earthTextureUrl); // No longer needed
   const nightTexture = textureLoader.load(nightTextureUrl); // Use imported URL
 
-  // Create custom shader material for day/night transition
-  const globeMaterial = new THREE.ShaderMaterial({
-    uniforms: {
-      dayTexture: { value: globeTexture },
-      nightTexture: { value: nightTexture },
-      mixAmount: { value: 0.0 }
-    },
-    vertexShader: `
-      varying vec2 vUv;
-      varying vec3 vNormal;
-      
-      void main() {
-        vUv = uv;
-        vNormal = normalize(normalMatrix * normal);
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-      }
-    `,
-    fragmentShader: `
-      uniform sampler2D dayTexture;
-      uniform sampler2D nightTexture;
-      uniform float mixAmount;
-      
-      varying vec2 vUv;
-      varying vec3 vNormal;
-      
-      void main() {
-        vec3 dayColor = texture2D(dayTexture, vUv).rgb;
-        vec3 nightColor = texture2D(nightTexture, vUv).rgb;
-        
-        // Calculate light intensity based on normal
-        float intensity = 1.05 - dot(vNormal, vec3(0.0, 0.0, 1.0));
-        float dayMix = clamp(1.0 - intensity - mixAmount, 0.0, 1.0);
-        
-        // Mix day and night textures
-        vec3 finalColor = mix(nightColor, dayColor, dayMix);
-        
-        // Add atmosphere glow at edges
-        float atmosphereIntensity = pow(intensity, 1.5);
-        vec3 atmosphereColor = vec3(0.54, 0.76, 0.29); // Green atmosphere color
-        finalColor = mix(finalColor, atmosphereColor, atmosphereIntensity * 0.3);
-        
-        gl_FragColor = vec4(finalColor, 1.0);
-      }
-    `
+  // Use standard material with only the night texture
+  const globeMaterial = new THREE.MeshStandardMaterial({
+    map: nightTexture,
   });
-  
+
   globe = new THREE.Mesh(globeGeometry, globeMaterial);
   scene.add(globe);
   
@@ -314,21 +273,21 @@ function addInteractiveElements() {
       });
     });
   });
-  
-  // Day/night cycle based on scroll position
-  window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY;
-    const documentHeight = document.body.scrollHeight - window.innerHeight;
-    const scrollPercentage = scrollPosition / documentHeight;
-    
-    // Update globe material mix amount based on scroll
-    if (globe && globe.material.uniforms) {
-      gsap.to(globe.material.uniforms.mixAmount, {
-        value: scrollPercentage,
-        duration: 1
-      });
-    }
-  });
+
+  // Day/night cycle logic removed as we only have one texture now
+  // window.addEventListener('scroll', () => {
+  //   const scrollPosition = window.scrollY;
+  //   const documentHeight = document.body.scrollHeight - window.innerHeight;
+  //   const scrollPercentage = scrollPosition / documentHeight;
+  //
+  //   // Update globe material mix amount based on scroll (REMOVED)
+  //   // if (globe && globe.material.uniforms) {
+  //   //   gsap.to(globe.material.uniforms.mixAmount, {
+  //   //     value: scrollPercentage,
+  //   //     duration: 1
+  //   //   });
+  //   // }
+  // });
 }
 
 // Handle window resize
