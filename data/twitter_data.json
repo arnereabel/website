@@ -1,0 +1,70 @@
+{
+  "result": {
+    "data": {
+      "user": {
+        "result": {
+          "__typename": "User",
+          "affiliates_highlighted_label": {},
+          "business_account": {},
+          "creator_subscriptions_count": 0,
+          "has_graduated_access": true,
+          "has_hidden_subscriptions_on_profile": false,
+          "highlights_info": {
+            "can_highlight_tweets": false,
+            "highlighted_tweets": "0"
+          },
+          "id": "VXNlcjoxMTc3MzEzNjM2Njc2NzE0NDk2",
+          "is_blue_verified": false,
+          "is_profile_translatable": false,
+          "legacy": {
+            "can_dm": true,
+            "can_media_tag": true,
+            "created_at": "Thu Sep 26 20:07:14 +0000 2019",
+            "default_profile": true,
+            "default_profile_image": false,
+            "description": "Legal doesn't necessarily make it Right.               \nDon't fail your children.",
+            "entities": {
+              "description": {
+                "urls": []
+              }
+            },
+            "fast_followers_count": 0,
+            "favourites_count": 3684,
+            "followers_count": 128,
+            "friends_count": 860,
+            "has_custom_timelines": true,
+            "is_translator": false,
+            "listed_count": 2,
+            "location": "",
+            "media_count": 716,
+            "name": ".",
+            "normal_followers_count": 128,
+            "pinned_tweet_ids_str": [
+              "1225192897940742149"
+            ],
+            "possibly_sensitive": false,
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1177313636676714496/1579734611",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1357039524182953984/A_mVX1tg_normal.jpg",
+            "profile_interstitial_type": "",
+            "screen_name": "apeekattheworld",
+            "statuses_count": 5312,
+            "translator_type": "none",
+            "verified": false,
+            "want_retweets": false,
+            "withheld_in_countries": []
+          },
+          "legacy_extended_profile": {},
+          "profile_image_shape": "Circle",
+          "rest_id": "1177313636676714496",
+          "smart_blocked_by": false,
+          "smart_blocking": false,
+          "tipjar_settings": {},
+          "user_seed_tweet_count": 0,
+          "verification_info": {
+            "is_identity_verified": false
+          }
+        }
+      }
+    }
+  }
+}

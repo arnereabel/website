@@ -1,0 +1,803 @@
+{
+  "id": 604814856,
+  "urn": "ACoAACQMvggBVG8LSuyCGqRB_b6eSgD98TEE5FQ",
+  "username": "arne-reabel-72067414a",
+  "firstName": "Arne",
+  "lastName": "Reabel",
+  "isPremium": false,
+  "profilePicture": "https://media.licdn.com/dms/image/v2/D4E03AQFqhh0h_T4vtg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714325173556?e=1749081600&v=beta&t=eZ85Dj9qCbWCAARNck1lXd7a-XaKLx5YNC4ZGj9Qfy0",
+  "profilePictures": [
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4E03AQFqhh0h_T4vtg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1714325173556?e=1749081600&v=beta&t=t06bEbKR3ea_scfFfXG4r46AKmRdkYC4hU7EVhPuScA",
+      "width": 100,
+      "height": 100
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4E03AQFqhh0h_T4vtg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714325173556?e=1749081600&v=beta&t=oaKpEmNup1bLk25Jf4v1X4bck17v7Uq7-ED6mmMc9dY",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4E03AQFqhh0h_T4vtg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714325173556?e=1749081600&v=beta&t=yQ317pTRYvHIH5-Hm0L9W_UqQ7cLH25ZK0pKhA5FoAk",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4E03AQFqhh0h_T4vtg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714325173556?e=1749081600&v=beta&t=eZ85Dj9qCbWCAARNck1lXd7a-XaKLx5YNC4ZGj9Qfy0",
+      "width": 800,
+      "height": 800
+    }
+  ],
+  "summary": "https://github.com/arnereabel",
+  "headline": ".Robotics programming",
+  "geo": {
+    "country": "Belgium",
+    "city": "Arendonk, Flemish Region",
+    "full": "Arendonk, Flemish Region, Belgium",
+    "countryCode": "be"
+  },
+  "educations": [
+    {
+      "start": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "fieldOfStudy": "",
+      "degree": "",
+      "grade": "",
+      "schoolName": "ka mol",
+      "description": "",
+      "activities": "",
+      "url": "",
+      "schoolId": "",
+      "logo": null
+    }
+  ],
+  "position": [
+    {
+      "companyId": 2456316,
+      "companyName": "Smulders",
+      "companyUsername": "smuldersgroup",
+      "companyURL": "https://www.linkedin.com/company/smuldersgroup/",
+      "companyLogo": "https://media.licdn.com/dms/image/v2/C560BAQFRqB1MfbJB2w/company-logo_400_400/company-logo_400_400/0/1631437337596/smulders_group_holdco_b_v__logo?e=1749081600&v=beta&t=1h5Ol4hs7zMdXpAPIUxN_5MEGg1d3Y9FnOyUufbHLXo",
+      "companyIndustry": "Construction",
+      "companyStaffCountRange": "1001 - 5000",
+      "title": "Programmer",
+      "multiLocaleTitle": {
+        "en_US": "Programmer"
+      },
+      "multiLocaleCompanyName": {
+        "en_US": "Smulders"
+      },
+      "location": "Arendonk, Flemish Region, Belgium",
+      "description": "",
+      "employmentType": "Full-time",
+      "start": {
+        "year": 2020,
+        "month": 6,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      }
+    },
+    {
+      "companyId": 10537215,
+      "companyName": "Maes Hoogwerkers en Montaco",
+      "companyUsername": "maeshoogwerkersmontaco",
+      "companyURL": "https://www.linkedin.com/company/maeshoogwerkersmontaco/",
+      "companyLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQHl2gukscaalQ/company-logo_400_400/company-logo_400_400/0/1630568865857/maeshoogwerkersmontaco_logo?e=1749081600&v=beta&t=rt38_AmGG9eGpm1w_H_pwj0vtfG8WFc0zPIro-kThz8",
+      "companyIndustry": "Machinery",
+      "companyStaffCountRange": "51 - 200",
+      "title": "aerial platform",
+      "multiLocaleTitle": {
+        "en_US": "aerial platform"
+      },
+      "multiLocaleCompanyName": {
+        "en_US": "Maes Hoogwerkers en Montaco"
+      },
+      "location": "",
+      "description": "Aerial Platforms: reparation and construction of wind turbines, electric pylons, and cellphone antennas",
+      "employmentType": "Full-time",
+      "start": {
+        "year": 2012,
+        "month": 1,
+        "day": 0
+      },
+      "end": {
+        "year": 2016,
+        "month": 9,
+        "day": 0
+      }
+    }
+  ],
+  "fullPositions": [
+    {
+      "companyId": 2456316,
+      "companyName": "Smulders",
+      "companyUsername": "smuldersgroup",
+      "companyURL": "https://www.linkedin.com/company/smuldersgroup/",
+      "companyLogo": "https://media.licdn.com/dms/image/v2/C560BAQFRqB1MfbJB2w/company-logo_400_400/company-logo_400_400/0/1631437337596/smulders_group_holdco_b_v__logo?e=1749081600&v=beta&t=1h5Ol4hs7zMdXpAPIUxN_5MEGg1d3Y9FnOyUufbHLXo",
+      "companyIndustry": "Construction",
+      "companyStaffCountRange": "1001 - 5000",
+      "title": "Programmer",
+      "multiLocaleTitle": {
+        "en_US": "Programmer"
+      },
+      "multiLocaleCompanyName": {
+        "en_US": "Smulders"
+      },
+      "location": "Arendonk, Flemish Region, Belgium",
+      "description": "",
+      "employmentType": "Full-time",
+      "start": {
+        "year": 2020,
+        "month": 6,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      }
+    },
+    {
+      "companyId": 10537215,
+      "companyName": "Maes Hoogwerkers en Montaco",
+      "companyUsername": "maeshoogwerkersmontaco",
+      "companyURL": "https://www.linkedin.com/company/maeshoogwerkersmontaco/",
+      "companyLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQHl2gukscaalQ/company-logo_400_400/company-logo_400_400/0/1630568865857/maeshoogwerkersmontaco_logo?e=1749081600&v=beta&t=rt38_AmGG9eGpm1w_H_pwj0vtfG8WFc0zPIro-kThz8",
+      "companyIndustry": "Machinery",
+      "companyStaffCountRange": "51 - 200",
+      "title": "aerial platform",
+      "multiLocaleTitle": {
+        "en_US": "aerial platform"
+      },
+      "multiLocaleCompanyName": {
+        "en_US": "Maes Hoogwerkers en Montaco"
+      },
+      "location": "",
+      "description": "Aerial Platforms: reparation and construction of wind turbines, electric pylons, and cellphone antennas",
+      "employmentType": "Full-time",
+      "start": {
+        "year": 2012,
+        "month": 1,
+        "day": 0
+      },
+      "end": {
+        "year": 2016,
+        "month": 9,
+        "day": 0
+      }
+    }
+  ],
+  "skills": [
+    {
+      "name": "CUDA",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "tello sdk",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "llm",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "yolo",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "OpenCV",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Keras",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "drone object detection + following",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "cuda toolkit",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "PyTorch",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Large Language Models (LLM)",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Project Management",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Professional Skills",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Communication",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Business Communications",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Teamwork",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Problem Solving",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Machine Learning",
+      "passedSkillAssessment": true
+    },
+    {
+      "name": "Analytical Skills",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "TensorFlow",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Pandas (Software)",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "NumPy",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Image Processing",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Computer Vision",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Robotic Welding",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Delfoi Robotics ",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Python (Programming Language)",
+      "passedSkillAssessment": true
+    },
+    {
+      "name": "Robotics",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Research",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Computer Science",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Computer Repair",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "German",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "English",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "French",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Dutch",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "visual components",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Packet Tracer",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Simulation Software",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Welding",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Robot",
+      "passedSkillAssessment": false
+    },
+    {
+      "name": "Programming",
+      "passedSkillAssessment": false
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Gp series w /YRC1000micro Controller w / Smart Pendant",
+      "start": {
+        "year": 2024,
+        "month": 11,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "YASKAWA Europe",
+      "company": {
+        "name": "YASKAWA Europe",
+        "universalName": "yaskawa",
+        "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQHI0O-fTfWuLA/company-logo_200_200/company-logo_200_200/0/1631362408365/yaskawa_logo?e=1749081600&v=beta&t=fCrvjmYQWWyXaffHOvbnYD8Xfy2576FUvCDc1kQvv6k",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": " Yaskawa Motosim Robot Programming and Simulation",
+      "start": {
+        "year": 2024,
+        "month": 10,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "robotics - automation and ai education & training",
+      "company": {
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "Code Foundation for ROS",
+      "start": {
+        "year": 2024,
+        "month": 10,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "The Construct",
+      "company": {
+        "name": "The Construct Robotics Institute",
+        "universalName": "the-construct",
+        "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQHHWrb95guYtw/company-logo_200_200/company-logo_200_200/0/1630573768964/the_construct_logo?e=1749081600&v=beta&t=W0iB07r4EiRy7Z3QfKRXlRbFBUzFfPAqYf8y5I47U0g",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "Linear Algebra Course",
+      "start": {
+        "year": 2022,
+        "month": 5,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "Codecademy",
+      "company": {
+        "name": "Codecademy",
+        "universalName": "codecademy",
+        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_200_200/company-logo_200_200/0/1720724787444/codecademy_logo?e=1749081600&v=beta&t=S1F3r-amEMj_-dXo0hpVWWHuUNaepRoyC1QhbfNqRK8",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "Learn Python 3 Course",
+      "start": {
+        "year": 2021,
+        "month": 9,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "Codecademy",
+      "company": {
+        "name": "Codecademy",
+        "universalName": "codecademy",
+        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_200_200/company-logo_200_200/0/1720724787444/codecademy_logo?e=1749081600&v=beta&t=S1F3r-amEMj_-dXo0hpVWWHuUNaepRoyC1QhbfNqRK8",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "International Diploma in Robot Welding",
+      "start": {
+        "year": 2021,
+        "month": 7,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "Nederlands Instituut voor Lastechniek",
+      "company": {
+        "name": "Nederlands Instituut voor Lastechniek",
+        "universalName": "nederlands-instituut-voor-lastechniek",
+        "logo": "https://media.licdn.com/dms/image/v2/C510BAQF_mwsiFQkREw/company-logo_200_200/company-logo_200_200/0/1631310104692?e=1749081600&v=beta&t=dYQJpAmiQ85TJjpEm_gdxfLdQk13uqYky-cDHiYrVcs",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "edX Verified Certificate for Python Basics for Data Science",
+      "start": {
+        "year": 2021,
+        "month": 5,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "edX",
+      "company": {
+        "name": "edX",
+        "universalName": "edx",
+        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQFG13a41008Dg/company-logo_200_200/company-logo_200_200/0/1688142646299/edx_logo?e=1749081600&v=beta&t=XNE74NVsH2XnWO_y1W7eZxPUc3F4t2EAXCbix1-KpAU",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "Introduction to Packet Tracer",
+      "start": {
+        "year": 2021,
+        "month": 2,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "Cisco",
+      "company": {
+        "name": "Cisco",
+        "universalName": "cisco",
+        "logo": "https://media.licdn.com/dms/image/v2/D560BAQHntSZQ9RWEng/company-logo_400_400/B56ZXuONwQHoAY-/0/1743458459248/cisco_logo?e=1749081600&v=beta&t=g9nhZrPouw0Vi96NLAQUrojU6YlM8olY5s-2k8IDb7M",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "QR-TR - Programming Advanced course Robot controller: Qirox",
+      "start": {
+        "year": 2020,
+        "month": 7,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "Carl Cloos Schweisstechnik GmbH",
+      "company": {
+        "name": "CLOOS Group",
+        "universalName": "carl-cloos-schwei\u00dftechnik-gmbh",
+        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQFVJmCSdTbvEA/company-logo_200_200/company-logo_200_200/0/1709045422286/carl_cloos_schweitechnik_gmbh_logo?e=1749081600&v=beta&t=Mvi8FXxc-dtZUNlpCSH37fnZjaiegYa3P0Cv2-DXVnw",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "Hoger Redder ",
+      "start": {
+        "year": 2020,
+        "month": 6,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "Vlaamse trainerschool",
+      "company": {
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "Aerial Platfrom ",
+      "start": {
+        "year": 2014,
+        "month": 10,
+        "day": 0
+      },
+      "end": {
+        "year": 2031,
+        "month": 12,
+        "day": 0
+      },
+      "authority": "Maes Hoogwerkers en Montaco",
+      "company": {
+        "name": "Maes Hoogwerkers en Montaco",
+        "universalName": "maeshoogwerkersmontaco",
+        "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQHl2gukscaalQ/company-logo_200_200/company-logo_200_200/0/1630568865857/maeshoogwerkersmontaco_logo?e=1749081600&v=beta&t=bQ-B4bPC8w_rNmTMDGmAKVsyR-OPwRZq8G7jGREE-1Q",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    },
+    {
+      "name": "intervention of electric grid with aerial platform",
+      "start": {
+        "year": 2014,
+        "month": 9,
+        "day": 0
+      },
+      "end": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "authority": "Elia",
+      "company": {
+        "name": "Elia Group",
+        "universalName": "eliagroup",
+        "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQF1vgNh9GPwBg/company-logo_200_200/company-logo_200_200/0/1701196859800/elia_logo?e=1749081600&v=beta&t=xspTmNYUgxp9n3zTONi8PDdQl1BjdsHQCmx5wSly4k4",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "timePeriod": {
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        }
+      }
+    }
+  ],
+  "projects": {
+    "total": 1,
+    "items": [
+      {
+        "title": "tello drone object following + collision detection study",
+        "description": "This project allows you to use YOLO with a DJI Tello Drone for real-time object detection and collison avoidance , pytorch, cuda toolkit, tello sdk,",
+        "start": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "end": {
+          "year": 0,
+          "month": 0,
+          "day": 0
+        },
+        "contributors": [
+          {
+            "urn": "ACoAACQMvggBVG8LSuyCGqRB_b6eSgD98TEE5FQ",
+            "username": "arne-reabel-72067414a",
+            "fullName": "Arne Reabel",
+            "firstName": "Arne",
+            "lastName": "Reabel",
+            "profilePicture": [
+              {
+                "width": 100,
+                "height": 100,
+                "url": "https://media.licdn.com/dms/image/v2/D4E03AQFqhh0h_T4vtg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1714325173556?e=1749081600&v=beta&t=t06bEbKR3ea_scfFfXG4r46AKmRdkYC4hU7EVhPuScA"
+              },
+              {
+                "width": 200,
+                "height": 200,
+                "url": "https://media.licdn.com/dms/image/v2/D4E03AQFqhh0h_T4vtg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714325173556?e=1749081600&v=beta&t=oaKpEmNup1bLk25Jf4v1X4bck17v7Uq7-ED6mmMc9dY"
+              },
+              {
+                "width": 400,
+                "height": 400,
+                "url": "https://media.licdn.com/dms/image/v2/D4E03AQFqhh0h_T4vtg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714325173556?e=1749081600&v=beta&t=yQ317pTRYvHIH5-Hm0L9W_UqQ7cLH25ZK0pKhA5FoAk"
+              },
+              {
+                "width": 800,
+                "height": 800,
+                "url": "https://media.licdn.com/dms/image/v2/D4E03AQFqhh0h_T4vtg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714325173556?e=1749081600&v=beta&t=eZ85Dj9qCbWCAARNck1lXd7a-XaKLx5YNC4ZGj9Qfy0"
+              }
+            ],
+            "headline": ".Robotics programming",
+            "url": "https://www.linkedin.com/in/arne-reabel-72067414a"
+          }
+        ]
+      }
+    ]
+  },
+  "supportedLocales": [
+    {
+      "country": "US",
+      "language": "en"
+    }
+  ],
+  "multiLocaleFirstName": {
+    "en": "Arne"
+  },
+  "multiLocaleLastName": {
+    "en": "Reabel"
+  },
+  "multiLocaleHeadline": {
+    "en": ".Robotics programming"
+  }
+}

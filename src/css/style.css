@@ -1,0 +1,537 @@
+:root {
+  --primary-color: #8bc34a;
+  --secondary-color: #cddc39;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #4caf50;
+  --surface-color: #1e1e1e;
+  --error-color: #f44336;
+  --success-color: #4caf50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.container.loaded {
+  opacity: 1;
+}
+
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-animation {
+  width: 200px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loading-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--primary-color);
+  transition: width 0.5s ease;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 1;
+  padding-left: 1rem; /* Shift content slightly right */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text; /* For Safari/WebKit */
+  background-clip: text; /* Standard property */
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+#globe-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Sections */
+section {
+  padding: 6rem 2rem;
+  min-height: 100vh;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.about-text ul {
+  margin-left: 2rem; /* Indent the bullet list */
+  list-style-position: outside; /* Ensure bullets are outside the text flow */
+}
+
+.about-text p,
+.about-text ul {
+  margin-bottom: 1.2rem; /* Add space below paragraphs and the list */
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card-link {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color */
+  display: block; /* Make the link take up the card space */
+  border-radius: 8px; /* Match card radius */
+  transition: background-color 0.3s ease;
+}
+
+.project-card-link:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle background highlight on hover */
+}
+
+.project-card {
+  background-color: var(--surface-color);
+  border-radius: 8px; /* Keep radius */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Ensure card fills the link area */
+}
+
+.project-card-link:hover .project-card { /* Apply hover effects via the link */
+  transform: translateY(-5px); /* Slightly less lift */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.project-description {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background-color: rgba(140, 195, 74, 0.2);
+  color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* Experience Section */
+.experience-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+.experience-item {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.experience-content {
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-date {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-company {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.experience-skills {
+  margin-top: 1rem; /* Add space above the skills list */
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Certifications Section */
+.certifications-list {
+  max-width: 800px; /* Consistent width */
+  margin: 0 auto;
+  padding-left: 1rem; /* Indent list slightly */
+}
+
+.certification-items {
+  list-style: disc; /* Use standard bullets */
+  padding-left: 1.5rem; /* Indent list items */
+}
+
+.certification-item {
+  margin-bottom: 1rem; /* Space between items */
+  line-height: 1.5;
+}
+
+.certification-name {
+  font-weight: 600; /* Make name bold */
+}
+
+.certification-authority {
+  opacity: 0.8; /* Slightly dimmer authority */
+}
+
+.certification-link {
+  color: inherit; /* Make link text color same as surrounding text */
+  text-decoration: none; /* Optional: remove underline if desired */
+}
+
+.certification-link:hover {
+  text-decoration: underline; /* Optional: add underline on hover */
+  color: var(--primary-color); /* Optional: change color on hover */
+}
+
+
+/* Travel Section */
+.travel-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.travel-map {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.travel-trips {
+  display: grid;
+  /* Adjust grid to better center a single item */
+  grid-template-columns: minmax(300px, 500px); /* Single column with max width */
+  justify-content: center; /* Center the column itself */
+  gap: 2rem;
+}
+
+.trip-card {
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trip-image {
+  width: 100%;
+  height: 250px; /* Increased height */
+  object-fit: contain; /* Show the whole image, centered, possibly with letterboxing */
+  background-color: #000; /* Optional: Add background for letterboxing */
+  display: block; /* Ensure it behaves as a block element */
+}
+
+.trip-content {
+  padding: 1.5rem;
+}
+
+.trip-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.trip-date {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.trip-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.trip-stat {
+  text-align: center;
+}
+
+.trip-stat-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.trip-stat-label {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Contact Section */
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 1rem;
+  background-color: var(--surface-color);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: var(--text-color);
+  font-family: inherit;
+}
+
+#contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+#contact-form button {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--surface-color);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--primary-color);
+}
+
+.donate-button {
+  text-align: center;
+}
+
+.donate-button a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--surface-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .experience-timeline::before {
+    left: 20px;
+  }
+}
+
+/* Particle Effects */
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}

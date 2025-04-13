@@ -1,0 +1,193 @@
+/* Additional responsive styles */
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  display: none;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.mobile-nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+/* Performance optimizations */
+.optimize-3d {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 5rem 1.5rem;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .experience-timeline::before {
+    left: 30px;
+  }
+  
+  .experience-item {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+  
+  nav {
+    padding: 1rem 1.5rem;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(18, 18, 18, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 99;
+  }
+  
+  .nav-links.active {
+    right: 0;
+  }
+  
+  .nav-links li {
+    margin: 1.5rem 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .travel-trips {
+    grid-template-columns: 1fr;
+  }
+  
+  #contact-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+  }
+  
+  .experience-content {
+    padding: 1rem;
+  }
+  
+  .social-links {
+    flex-wrap: wrap;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .project-card:hover {
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links a:hover {
+    color: var(--text-color);
+  }
+  
+  .social-link:hover {
+    background-color: var(--surface-color);
+  }
+  
+  .donate-button a:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+/* Low-end device optimizations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .particles {
+    display: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  nav, footer, #globe-container, .particles, .donate-button {
+    display: none !important;
+  }
+  
+  body {
+    background-color: white;
+    color: black;
+  }
+  
+  section {
+    page-break-inside: avoid;
+    padding: 1rem 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
