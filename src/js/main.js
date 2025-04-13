@@ -4,6 +4,10 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { loadAboutContent, loadProjectsContent, loadExperienceContent, loadTravelContent, loadCertificationsContent, loadContactContent } from './content.js'; // Added loadCertificationsContent
 import { createInteractiveProjectCards, createInteractiveTimeline, createInteractiveSocialLinks, createScrollAnimations, createTypingEffect } from './interactive.js';
 
+// Import texture URLs for Vite compatibility
+import earthTextureUrl from '../assets/earth.jpeg';
+import nightTextureUrl from '../assets/earth_night.jpeg';
+
 // Main JavaScript file for the Three.js website
 
 // Variables
@@ -95,9 +99,9 @@ function createGlobe() {
   
   // Earth texture
   const textureLoader = new THREE.TextureLoader(loadingManager);
-  const globeTexture = textureLoader.load('./src/assets/earth.jpeg');
-  const nightTexture = textureLoader.load('./src/assets/earth_night.jpeg');
-  
+  const globeTexture = textureLoader.load(earthTextureUrl); // Use imported URL
+  const nightTexture = textureLoader.load(nightTextureUrl); // Use imported URL
+
   // Create custom shader material for day/night transition
   const globeMaterial = new THREE.ShaderMaterial({
     uniforms: {
