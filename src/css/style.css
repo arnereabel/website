@@ -115,9 +115,14 @@ nav {
 }
 
 .hero-content {
+  position: absolute; /* Position relative to #hero */
+  top: 70%; /* Position 70% down */
+  left: 50%;
+  width: 100%; /* Ensure it spans width for centering */
+  transform: translateX(-50%); /* Center horizontally */
   text-align: center;
   z-index: 1;
-  padding-left: 1rem; /* Shift content slightly right */
+  /* padding-left: 1rem; /* Remove or adjust padding if needed */
 }
 
 .hero-content h1 {
